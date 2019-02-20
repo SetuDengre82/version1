@@ -1,11 +1,12 @@
 .body{
 	margin: 0;
 	padding: 0;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("http://www.jacaranda.com.au/wp-content/uploads/2016/12/studyon_header_20161.jpg");
+	background-image:  url("https://pbs.twimg.com/media/Du44MClWkAEwOk2.jpg");
 	background-size: cover;
 	font-family: sans-serif;
   background-attachment:fixed;
 }
+
 
 .box{
 	width: 328px;
@@ -19,7 +20,6 @@
 	box-sizing: border-box;
 	border-radius: 20px;
 	padding:80px 30px;
-
 	
 }
 .logo{
@@ -80,3 +80,11 @@ h1{
 .box a:hover{
 	color:yellow; 
 }
+
+.example-container{ position: absolute;
+    top: 60px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    background: white; 
+    }
