@@ -5,6 +5,8 @@ import { StudentComponent } from './student/student.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { TerminalComponent } from './terminal/terminal.component';
 import { InterviewerComponent } from './interviewer/interviewer.component';
+import { RecruiterComponent } from './recruiter/recruiter.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
   {
@@ -29,6 +31,14 @@ const routes: Routes = [
   {
     path: 'interviewer',
     component: InterviewerComponent
+  },
+  {
+    path: 'recruiter',
+    component: RecruiterComponent
+  },
+  {
+    path: 'feedback',
+    component: FeedbackComponent
   },
 ];
 

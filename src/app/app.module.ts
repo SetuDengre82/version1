@@ -16,6 +16,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { EditorComponent } from './editor/editor.component';
 
 import {  MatToolbarModule,MatSidenavModule, } from '@angular/material';
+import { RecruiterComponent } from './recruiter/recruiter.component';
 
 
 
@@ -31,7 +32,8 @@ import {  MatToolbarModule,MatSidenavModule, } from '@angular/material';
     TerminalComponent,
     InterviewerComponent,
     FeedbackComponent,
-    EditorComponent
+    EditorComponent,
+    RecruiterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,25 @@
 <mat-sidenav-container class="example-container">
 
-  <main class="main">
-    <p >
+  <main class="main">\
+    <p>
       interviewer works!
     </p>
-    <a routerLink='/terminal' routerLinkActive='Active'>
-      <button>terminal</button>
+    <nav>
+
+      <a routerLink='/terminal' routerLinkActive='Active'>
+        <button>terminal</button>
+      </a>
+
+      <a routerLink='/home' routerLinkActive='Active'>
+        <button>click to go to home</button>
+      </a>
+      <a routerLink='/feedback' routerLinkActive='Active'>
+        <button style="float:right">click to go to feedback</button>
+      </a>
+    </nav>
+    <a href="mailto:setudengre82@gmail.com">
+      <p text-color="red">click here to mail link to student</p>
     </a>
 
-    <a routerLink='/home' routerLinkActive='Active'>
-      <button>click to go to home</button>
-    </a>
   </main>
 </mat-sidenav-container>
