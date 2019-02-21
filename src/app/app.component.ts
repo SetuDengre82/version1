@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TcpService } from './tcp.service';
+
+
 
 @Component({
   selector: 'app-root',
@@ -6,14 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  incomponent: number= 100;
+  incomponent: number = 100;
 
-  AppComponent(){
+  AppComponent() {
 
   }
-  ngOnInit(){
-
+  ngOnInit() {
   }
   title = 'second';
-  
+
 }

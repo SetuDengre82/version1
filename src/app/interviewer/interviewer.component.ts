@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-interviewer',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterviewerComponent implements OnInit {
 
-  constructor() { }
+  options: FormGroup;
 
-  ngOnInit() {
+  constructor(fb: FormBuilder) {
+    this.options = fb.group({
+      bottom: 0,
+      fixed: false,
+      top: 0
+    });
   }
 
+  ngOnInit() {
+
+  }
 }

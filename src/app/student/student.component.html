@@ -1,17 +1,100 @@
-<mat-sidenav-container class="example-container">
-  <main class="main">
+<mat-sidenav-container class="example-container main">
+
+  <nav>
+    <a routerLink='/terminal' routerLinkActive='Active'>
+      <button>terminal</button>
+    </a>
+    <a routerLink='/home' routerLinkActive='Active'>
+      <button>click to go to home</button>
+    </a>
+    <a routerLink='/feedback' routerLinkActive='Active'>
+      <button>click to go to feedback</button>
+    </a>
+    <a routerLink='/login' routerLinkActive='Active'>
+      <button>click to go to login</button>
+    </a>
+  </nav>
+
+  <form class="example-formright">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Company (disabled)" disabled value="TEKSystem Global Service">
+    </mat-form-field>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="First name">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Long Last Name That Will Be Truncated">
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
     <p>
-      student works!
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Address">1600 Amphitheatre Pkwy</textarea>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Address 2"></textarea>
+      </mat-form-field>
     </p>
-    <nav>
-      <a routerLink='/home' routerLinkActive='Active'>
-        <button>click to go to HOME</button>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="City">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="State">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width">
+            <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="94043">
+            <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <form class="example-formleft">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Name" value="Dangerous Guy">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Date Of Birth" value="">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="email ID" value="">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Contact NO." value="">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Skill Set" value="">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Interview Time" value="">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Interview Date" value="">
+    </mat-form-field>
+    <button mat-raised-button color="warn">
+      <a href="mailto:setudengre82@gmail.com">
+        click here to mail link to student
       </a>
-    </nav>
-    <nav>
-      <a routerLink='/login' routerLinkActive='Active'>
-        <button>click to go to login</button>
-      </a>
-    </nav>
-  </main>
+    </button>
+
+  </form>
+
+
 </mat-sidenav-container>

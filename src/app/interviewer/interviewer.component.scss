@@ -1,8 +1,24 @@
 .example-container {
 	position: absolute;
 	top: 60px;
-	bottom: 60px;
+	bottom: 60px;	
 	left: 0;
-    right: 0;
-    background: white
+	right: 0;
+	background: #ffffff;
+	padding: 0px;
   }
+
+	.example-sidenav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 250px;
+		background: rgba(86, 231, 86,0.5);
+	}
+
+	.example-button-row button,
+.example-button-row a {
+	margin-right: 8px;
+width: 200px;
+}
+

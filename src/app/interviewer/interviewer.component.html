@@ -1,25 +1,31 @@
 <mat-sidenav-container class="example-container">
 
-  <main class="main">\
-    <p>
-      interviewer works!
-    </p>
-    <nav>
 
-      <a routerLink='/terminal' routerLinkActive='Active'>
-        <button>terminal</button>
-      </a>
 
-      <a routerLink='/home' routerLinkActive='Active'>
-        <button>click to go to home</button>
-      </a>
-      <a routerLink='/feedback' routerLinkActive='Active'>
-        <button style="float:right">click to go to feedback</button>
-      </a>
-    </nav>
-    <a href="mailto:setudengre82@gmail.com">
-      <p text-color="red">click here to mail link to student</p>
-    </a>
+  <mat-sidenav #sidenav mode="side" opened class="example-sidenav" [fixedInViewport]="options.value.fixed"
+    [fixedTopGap]="options.value.top" [fixedBottomGap]="options.value.bottom">
+    <main class="main">
+      <img src="\assets\dummy-man-brown.png" height="200px" style="padding-top:5px">
+      <p>name:<br>
+        Designation:
+      </p>
+      <div class="example-button-row">
+        <button mat-raised-button color="warn">Notification</button>
+        <button mat-raised-button color="primary">Recorded interviewer</button>
+        <button mat-raised-button color="accent">Portal feedback</button>
+        <button mat-raised-button color="warn">FAQ</button>
+        <button mat-raised-button>Themes</button>
+        <button mat-raised-button disabled>Themes</button>
+        <a mat-raised-button routerLink=".">Logout</a>
+      </div>
+    </main>
+  </mat-sidenav>
 
-  </main>
+
+  <mat-sidenav-content [formGroup]="options" id="sidenav-content">
+    <main class="main">
+      <button color="primary" mat-raised-button (click)="sidenav.toggle()" style="float:left">Toggle</button>
+      <app-student></app-student>
+    </main>
+  </mat-sidenav-content>
 </mat-sidenav-container>
